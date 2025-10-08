@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = "{{ cookiecutter.project_description }}"
+authors = [{name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"}]
+readme = "README.md"
+requires-python = ">={{ cookiecutter.python_version }}"
+dependencies = [
+    "rich",
+    "python-dotenv",
+{%- if cookiecutter.project_type == "ml" %}
+    "openai",
+    "langchain",
+    "langchain-community",
+{%- elif cookiecutter.project_type == "web" %}
+    "fastapi",
+    "uvicorn",
+{%- elif cookiecutter.project_type == "mcp" %}
+    "mcp",
+    "anthropic",
+{%- endif %}
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "pyrefly",
+    "pytest",
+    "pytest-asyncio",
+    "pre-commit",
+{%- if cookiecutter.project_type == "ml" %}
+    "jupyter",
+{%- elif cookiecutter.project_type == "web" %}
+    "httpx",
+{%- endif %}
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py{{ cookiecutter.python_version | replace('.', '') }}"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/{{ cookiecutter.package_name }}"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
