@@ -13,7 +13,6 @@ Use Claude Code's /commands with cookiecutter, Github MCP and setup-project.sh t
 
 3. **Set up a personal Claude Code command** - [Claude Code Documentation](https://docs.claude.com/en/docs/claude-code/common-workflows#create-custom-slash-commands)
    ```bash
-   # Copy the command file to Claude's commands directory
    cp ~/.config/project-scaffolder/project-scaffolder.md ~/.claude/commands/
    ```
 
