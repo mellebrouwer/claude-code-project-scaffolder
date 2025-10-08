@@ -2,6 +2,8 @@
 
 Use Claude Code's /commands with cookiecutter, Github MCP and setup-project.sh to quickly scaffold Python projects
 
+![Alt text](img/claude-scaffolder.png)
+
 ## Quick Setup (MacOS / Linux)
 
 1. **Install cookiecutter** - [Installation Guide](https://github.com/cookiecutter/cookiecutter)
