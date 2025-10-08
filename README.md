@@ -2,7 +2,7 @@
 
 Use Claude Code's /commands with cookiecutter, Github MCP and setup-project.sh to quickly scaffold Python projects
 
-## Quick Setup
+## Quick Setup (MacOS / Linux)
 
 1. **Install cookiecutter** - [Installation Guide](https://github.com/cookiecutter/cookiecutter)
 2. **Clone this repo** to `~/.config` (or your preferred location)
@@ -20,7 +20,7 @@ Use Claude Code's /commands with cookiecutter, Github MCP and setup-project.sh t
    
    Configure the GitHub MCP server in your Claude Code settings with a GitHub Personal Access Token (Classic)
 
-5. **Run Claude Code**
+5. **Run Claude Code in your terminal**
    ```bash
    claude
    ```
@@ -30,10 +30,12 @@ Use Claude Code's /commands with cookiecutter, Github MCP and setup-project.sh t
    /project-scaffolder {{Describe your project}}
    ```
 
-7. **Profit! 🎉**
+7. ???
+
+8. **Profit! 🎉**
 
 ## Notes
 
-- You could also just make calls to this GitHub cookiecutter template directly, but that's besides the point. This template isn't great, it's just to show how you could define your own.
+- You could also have Claude just make calls to this GitHub cookiecutter template directly, but that's besides the point. This template isn't great, it's just to show how you could define your own.
 
 - Play around with changing the `setup-project.sh` for deterministic commands you always want to run. The more you put in here, the more efficient your setup is gonna be. Only use Claude Code for things that you don't want to hardcode.
