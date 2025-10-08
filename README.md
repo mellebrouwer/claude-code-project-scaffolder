@@ -1,0 +1,10 @@
+- Install cookiecutter (link)
+- Put the setup-project.sh somewhere and chmod +x setup-project.sh
+- Update project-scaffolder.md with cookiecutter template location, code project directory and setup-project.sh
+- [Optional] Clone this cookiecutter project somewhere on your own machine (in ~/.config for example), make sure to replace the path 'gh:mellebrouwer/claude-code-project-scaffolder' with the new location
+- Put project-scaffolder.md in ~/.claude/commands (link)
+- add GitHub MCP tool with classic token to Claude Code (link)
+- bash: claude
+- /project-scaffolder {{Describe your project}}
+- ???
+- Profit!
