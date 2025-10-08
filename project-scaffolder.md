@@ -1,7 +1,7 @@
 Follow these steps to create a new Python project:
 
 1. The project is about: #$ARGUMENTS: 
-2. Run cookiecutter to create project structure (~/.config/claude-code-project-scaffolder/template/)
+2. Run cookiecutter to create project structure (~/.config/claude-code-project-scaffolder/)
     - First check the cookiecutter.json to understand what arguments you need to supply.
     - Run it with --no-input and the arguments so you don't have to go through the interactive flow 
     - cd ~/Documents/Coding (default coding project folder, but you are allowed to deviate or nest deeper if it makes sense to group projects together)
